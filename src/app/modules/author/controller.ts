@@ -56,6 +56,7 @@ const deleteAuthor=async(req:Request,res:Response,next:NextFunction)=>{
             message:'Author deleted successfully',
             data:result
         })
+        
     } catch (error) {
         next(error)
     }
