@@ -3,14 +3,14 @@
 	"name": "backend",
 	"builds": [
 		{
-			"src": "build/server.js",
+			"src": "dist/server.js",
 			"use": "@vercel/node"
 		}
 	],
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "build/server.js",
+			"dest": "dist/server.js",
 			"methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
 			"headers": {
 				"Access-Control-Allow-Origin": "*"
